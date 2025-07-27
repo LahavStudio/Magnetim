@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>ראשי</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>ראשי - Lahav Studio</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <header>
+  <img src="logo.png" class="logo"/>
   <nav><ul>
     <li><a href="index.html" class="flash-link">ראשי</a></li>
     <li><a href="gallery.html" class="flash-link">גלריה</a></li>
@@ -19,12 +21,34 @@
 
 <section class="hero" data-aos="fade-down">
   <h1>מגנטים שתופסים את הרגע</h1>
+  <p>מגנטים איכותיים שישמרו את השמחה של השמחות</p>
   <a href="#contact" class="cta" data-aos="zoom-in">להזמינו עכשיו</a>
+</section>
+<section class="about" data-aos="fade-right">
+  <h2>על Lahav Studio</h2>
+  <p>אנחנו ב-Lahav Studio מציעים חוויית צילום מגנטים אישית ומקצועית לכל אירוע, עם צוות מנוסה וטכנולוגיה מתקדמת.</p>
+</section>
+<section class="demo" data-aos="fade-left">
+  <h2>דוגמאות למגנטים</h2>
+  <div class="polaroid-row">
+    <div class="polaroid"><img src="placeholder1.jpg"/><div class="caption">אירוע יוקרתי</div></div>
+    <div class="polaroid rotate"><img src="placeholder2.jpg"/><div class="caption">שמחות במשפחה</div></div>
+    <div class="polaroid"><img src="placeholder3.jpg"/><div class="caption">חוויות בלתי נשכחות</div></div>
+  </div>
+</section>
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>צור קשר</h2>
+  <form action="https://formspree.io/f/mnqewvyv" method="POST">
+    <input type="text" name="name" placeholder="שם מלא" required/>
+    <input type="tel" name="phone" placeholder="טלפון" required/>
+    <textarea name="message" placeholder="הודעה" required></textarea>
+    <button type="submit">שליחה</button>
+  </form>
 </section>
 
 <footer><p>© 2025 Lahav Studio</p></footer>
-<button class="admin-btn" onclick="window.location='admin.html'">כניסת מנהל</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
 <script src="scripts.js" defer></script>
 </body>
 </html>
