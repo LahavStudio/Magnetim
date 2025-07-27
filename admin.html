@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Admin</title>
+<link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
+<style>#gjs{height:600px;margin:0;}</style>
+</head><body>
+<script>if(prompt('סיסמא:')!=='admin123'){window.location='index.html';}</script>
+<div id="gjs">{% raw %}</div>
+<button id="export-btn" style="position:fixed;bottom:10px;right:10px;">ייצא קבצים</button>
+<script src="https://unpkg.com/grapesjs"></script>
+<script>
+var editor = grapesjs.init({ container:'#gjs', fromElement:true, storageManager:{type:'local'} });
+document.getElementById('export-btn').onclick = () => {
+  const html = editor.getHtml(), css = editor.getCss();
+  const a1 = document.createElement('a'), a2 = document.createElement('a');
+  a1.href = URL.createObjectURL(new Blob([html],{type:'text/html'})); a1.download='index.html'; a1.click();
+  a2.href = URL.createObjectURL(new Blob([css],{type:'text/css'})); a2.download='style.css'; a2.click();
+};
+</script>
+</body></html>
