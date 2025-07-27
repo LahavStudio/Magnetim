@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background: linear-gradient(to right, #ff66b2, #6a11cb);
+  color: white;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  padding: 100px 20px;
+}
+.cta-button {
+  background: yellow;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000088;
+}
+.contact-form {
+  background: white;
+  color: black;
+  padding: 50px 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  padding: 10px 20px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+footer {
+  padding: 20px;
+  font-size: 14px;
+}
