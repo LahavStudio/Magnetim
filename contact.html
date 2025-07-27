@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>צור קשר - Lahav Studio</title><link rel="stylesheet" href="style.css"/><script src="scripts.js" defer></script></head>
-<body><header><img src="logo.png" class="logo"/><nav><ul>
-<li><a href="index.html" class="flash-link">ראשי</a></li>
-<li><a href="gallery.html" class="flash-link">גלריה</a></li>
-<li><a href="services.html" class="flash-link">שירותים</a></li>
-<li><a href="packages.html" class="flash-link">חבילות</a></li>
-<li><a href="contact.html" class="flash-link">צור קשר</a></li>
-</ul></nav></header>
-<section class="contact-page"><h2>צור קשר</h2><form action="https://formspree.io/f/mnqewvyv" method="POST">
-<input type="text" name="name" placeholder="שם מלא" required/>
-<input type="tel" name="phone" placeholder="טלפון" required/>
-<textarea name="message" placeholder="הודעה" required></textarea>
-<button type="submit">שליחה</button>
-</form></section><footer><p>© 2025 Lahav Studio</p></footer></body></html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>צור קשר - Lahav Studio</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <img src="logo.png" class="logo"/>
+  <nav><ul>
+    <li><a href="index.html" class="flash-link">ראשי</a></li>
+    <li><a href="gallery.html" class="flash-link">גלריה</a></li>
+    <li><a href="services.html" class="flash-link">שירותים</a></li>
+    <li><a href="packages.html" class="flash-link">חבילות</a></li>
+    <li><a href="contact.html" class="flash-link">צור קשר</a></li>
+  </ul></nav>
+</header>
+
+<section class="contact-page" data-aos="fade-up">
+  <h2>צור קשר</h2>
+  <form action="https://formspree.io/f/mnqewvyv" method="POST">
+    <input type="text" name="name" placeholder="שם מלא" required/>
+    <input type="tel" name="phone" placeholder="טלפון" required/>
+    <textarea name="message" placeholder="הודעה" required></textarea>
+    <button type="submit">שליחה</button>
+  </form>
+</section>
+
+<footer><p>© 2025 Lahav Studio</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+<script src="scripts.js" defer></script>
+</body>
+</html>

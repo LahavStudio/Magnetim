@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>שירותים - Lahav Studio</title><link rel="stylesheet" href="style.css"/>
-</head><body><header><img src="logo.png" class="logo"/><nav><ul>
-<li><a href="index.html" class="flash-link">ראשי</a></li>
-<li><a href="gallery.html" class="flash-link">גלריה</a></li>
-<li><a href="services.html" class="flash-link">שירותים</a></li>
-<li><a href="packages.html" class="flash-link">חבילות</a></li>
-<li><a href="contact.html" class="flash-link">צור קשר</a></li>
-</ul></nav></header>
-<section class="services-page"><h2>השירותים שלנו</h2><div class="services-grid">
-<div class="service-card"><h3>צילום מגנטים</h3><p>צילום מקצועי עם אולטרה-פריימינג.</p></div>
-<div class="service-card"><h3>עיצוב מותאם</h3><p>עיצוב אישי לכל אירוע.</p></div>
-<div class="service-card"><h3>הדפסה מיידית</h3><p>הדפסה במקום תוך שניות.</p></div>
-</div></section><footer><p>© 2025 Lahav Studio</p></footer></body></html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>שירותים - Lahav Studio</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <img src="logo.png" class="logo"/>
+  <nav><ul>
+    <li><a href="index.html" class="flash-link">ראשי</a></li>
+    <li><a href="gallery.html" class="flash-link">גלריה</a></li>
+    <li><a href="services.html" class="flash-link">שירותים</a></li>
+    <li><a href="packages.html" class="flash-link">חבילות</a></li>
+    <li><a href="contact.html" class="flash-link">צור קשר</a></li>
+  </ul></nav>
+</header>
+
+<section class="services-page" data-aos="fade-down">
+  <h2>השירותים שלנו</h2>
+  <div class="services-grid">
+    <div class="service-card" data-aos="fade-right"><h3>צילום מגנטים</h3><p>צילום מקצועי עם אולטרה-פריימינג.</p></div>
+    <div class="service-card" data-aos="fade-up"><h3>עיצוב מותאם</h3><p>עיצוב אישי לכל אירוע.</p></div>
+    <div class="service-card" data-aos="fade-left"><h3>הדפסה מיידית</h3><p>הדפסה במקום תוך שניות.</p></div>
+  </div>
+</section>
+
+<footer><p>© 2025 Lahav Studio</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+<script src="scripts.js" defer></script>
+</body>
+</html>
