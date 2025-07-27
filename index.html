@@ -8,38 +8,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">ראשי</a></li>
-        <li><a href="#">גלריה</a></li>
-        <li><a href="#">שירותים</a></li>
-        <li><a href="#contact">צור קשר</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
+  <div class="hero">
     <h1>מגנטים שתופסים את הרגע</h1>
     <h2>שמחה</h2>
     <p>מגנטים איכותיים שישמרו את השמחה של שמחות</p>
-    <a href="#contact" class="cta-button">להזמינו עכשיו</a>
-  </section>
+    <a href="#contact" class="cta">להזמינו עכשיו</a>
+  </div>
 
-  <section class="gallery">
-    <img src="placeholder1.jpg" alt="Magnet Example 1" />
-    <img src="placeholder2.jpg" alt="Magnet Example 2" />
-    <img src="placeholder3.jpg" alt="Magnet Example 3" />
-  </section>
-
-  <section id="contact" class="contact-form">
-    <h2>לפרטים נוספים והשארת</h2>
-    <form action="https://formspree.io/f/mnqewvyv" method="POST">
-      <input type="text" name="name" placeholder="שם" required />
-      <input type="tel" name="phone" placeholder="טלפון" required />
-      <textarea name="message" placeholder="הערה" required></textarea>
-      <button type="submit">שליחה</button>
-    </form>
+  <section class="main">
+    <div class="photos">
+      <div class="polaroid">
+        <img src="placeholder1.jpg" alt="Magnet 1" />
+        <div class="caption">מית חגגה<br>14.06.2024</div>
+      </div>
+      <div class="polaroid">
+        <img src="placeholder2.jpg" alt="Magnet 2" />
+        <div class="caption">גם בר מצווה<br>14.06.2024</div>
+      </div>
+      <div class="polaroid">
+        <img src="placeholder3.jpg" alt="Magnet 3" />
+        <div class="caption">חברים בשמחה</div>
+      </div>
+    </div>
+    <div class="form-box" id="contact">
+      <h3>לפרטים נוספים והשארת</h3>
+      <form action="https://formspree.io/f/mnqewvyv" method="POST">
+        <input type="text" name="name" placeholder="שם" required />
+        <input type="tel" name="phone" placeholder="טלפון" required />
+        <textarea name="message" placeholder="הערה" required></textarea>
+        <button type="submit">שליחה</button>
+      </form>
+    </div>
   </section>
 
   <footer>
